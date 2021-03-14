@@ -1,0 +1,981 @@
+body {
+    font-family: 'Proxima Nova Cn Lt', sans-serif;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    margin-right: 75px;
+}
+
+.header-container {
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 47.92%, #FFFFFF 100%), url(../img/bg-header.jpg)center no-repeat;
+    background-size: cover;
+    height: 633px;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.nav li {
+    list-style: none;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    margin-left: 165px;
+}
+
+.nav-item li {
+    text-decoration: none;
+    padding-right: 40px;
+    font-weight: 400;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #A5A9C0;
+}
+
+.nav-item a:hover {
+    color: #000;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.nav-item li:last-child {
+    padding: 0;
+}
+
+.dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    margin-top: 10px;
+    display: none;
+    position: absolute;
+    background: #F8F8F8;
+    min-width: 160px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #A5A9C0;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background: #F8F8F8;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.nav-btn {
+    display: flex;
+    align-items: center;
+    margin-right: 165px;
+}
+
+
+
+.btn-log {
+    padding-right: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #A5A9C0;
+}
+
+.btn-log:hover {
+    color: #000;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.btn-start {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 20px;
+    border-radius: 32px;
+    text-decoration: none;
+    background: #305DFB;
+    color: #fff;
+}
+
+.btn-start:hover {
+    background: #F8F8F8;
+    color: #A5A9C0;
+    transition: 0.5s;
+}
+
+.hero {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    text-align: center;
+    color: #181F48;
+}
+
+.hero h2 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: center;
+    color: #7B7E92;
+}
+
+.hero-btn {
+    display: flex;
+    justify-content: center;
+    padding-top: 28px;
+}
+
+.btn-discover {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 20px;
+    margin-left: 10px;
+    border-radius: 32px;
+    text-decoration: none;
+    background: #fff;
+    color: #305DFB;
+}
+
+.btn-discover:hover {
+    background: #305DFB;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    margin: 60px 0px;
+}
+
+.about-title {
+    width: 330px;
+}
+
+.about-list {
+    width: 414px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #A5A9C0;
+}
+
+.about-list li {
+    padding-bottom: 25px;
+    list-style-image: url(../img/Ellipse.png);
+}
+
+.about-list li:last-child {
+    padding: 0;
+}
+
+.account {
+    background: url(../img/bg-account.jpg)bottom no-repeat;
+    background-size: cover;
+    height: 280px;
+}
+
+.account {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 165px 40px 165px;
+}
+
+
+.account-title {
+    padding: 20px 0 10px 0;
+}
+
+.account-about {
+    width: 480px;
+}
+
+.account-about span {
+    width: 490px;
+    height: 80px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #7B7E92;
+}
+
+.account-form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -31px;
+    width: 505px;
+    height: 342px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 10px;
+}
+
+.account-form-block {
+    padding: 30px;
+}
+
+.account-form h3 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 150%;
+    padding-bottom: 10px;
+    color: #A5A9C0;
+}
+
+.account-form input {
+
+    border: 1px solid #E3E8E9;
+    border-radius: 7px;
+    padding: 15px;
+    width: 415px;
+    margin-bottom: 40px;
+}
+
+.account-form input::placeholder {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #DBDADA;
+}
+
+.sms {}
+
+.new-sms {
+    display: flex;
+    justify-content: space-between;
+    margin: 70px 165px 105px 125px;
+}
+
+.new-sms-create {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 550px;
+    height: 407px;
+}
+
+.new-ellipse-purple {
+    margin-top: 16px;
+}
+
+.new-ellipse-square {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.new-sms-item {
+    position: absolute;
+    top: 45px;
+    left: 80px;
+    padding: 43px 30px 20px 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 10px;
+}
+
+.new-sms-people {
+    display: flex;
+    padding: 20px 10px 20px 20px;
+    margin-bottom: 20px;
+    border: 1px solid #E3E8E9;
+    border-radius: 5px;
+}
+
+.new-sms-text h3 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    color: #181F48;
+}
+
+.new-sms-text span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #A5A9C0;
+}
+
+.new-sms-text {
+    padding-left: 16px;
+    width: 260px;
+}
+
+.new-sms-btn input {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 20px;
+    margin-right: 10px;
+    border-radius: 32px;
+    border: none;
+    text-decoration: none;
+    background: #1FCA3E;
+    color: #fff;
+}
+
+.new-sms-btn input:hover {
+    background: #F8F8F8;
+    color: #A5A9C0;
+    transition: 0.5s;
+}
+
+.new-sms-archive input {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 20px;
+    border-radius: 32px;
+    border: none;
+    text-decoration: none;
+    background: #F8F8F8;
+    color: #A5A9C0;
+}
+
+.new-sms-archive input:hover {
+    background: #1FCA3E;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.sms-about {
+    display: flex;
+    align-items: center;
+    width: 505px;
+}
+
+.sms-about-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.sms-about span {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    width: 490px;
+    color: #7B7E92;
+}
+
+.sms-title {
+    padding-top: 20px;
+}
+
+
+
+
+
+
+.send-about {
+    display: flex;
+    align-items: center;
+    width: 505px;
+}
+
+.send-about-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.send-about span {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    width: 490px;
+    color: #7B7E92;
+}
+
+.send-title {
+    padding-top: 20px;
+}
+
+.send-sms {
+    display: flex;
+    justify-content: space-between;
+    margin: 70px 165px 40px 125px;
+}
+
+.send-sms-create {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 550px;
+    height: 407px;
+}
+
+.send-ellipse-purple {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.send-ellipse-green {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.send-ellipse-square {
+    position: absolute;
+    bottom: 20px;
+    right: 200px;
+}
+
+.send-sms-item {
+    position: absolute;
+    top: 45px;
+    left: 80px;
+    padding: 43px 30px 20px 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 10px;
+}
+
+.send-sms-people {
+    display: flex;
+    align-items: center;
+}
+
+.send-sms-text h3 {
+    margin-left: 16px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    color: #181F48;
+}
+
+.send-sms-text span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #A5A9C0;
+}
+
+.send-sms-text {
+    display: flex;
+    align-items: center;
+}
+
+.send-sms-about {
+    display: flex;
+    flex-direction: column;
+}
+
+.send-sms-about span {
+    width: 355px;
+    border: 1px solid #E3E8E9;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #A5A9C0;
+}
+
+.send-sms-archive input {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 15px;
+    margin-right: 10px;
+    margin-left: 15px;
+    border-radius: 32px;
+    border: none;
+    text-decoration: none;
+    background: #F8F8F8;
+    color: #A5A9C0;
+}
+
+.send-sms-archive input:hover {
+    background: #1FCA3E;
+    color: #fff;
+    transition: 0.5s;
+}
+
+/* Popup */
+
+input[type=text],
+input[type=password] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 26px;
+    display: inline-block;
+    border: 1px solid #E3E8E9;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input[type=text]::placeholder,
+input[type=password]::placeholder {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #DBDADA;
+}
+
+.nav-btn button {
+    color: #A5A9C0;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.nav-btn button:hover {
+    opacity: 0.8;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+.imgcontainer h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.container button {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 15px;
+    border-radius: 32px;
+    margin: 10px 30px 0px 30px;
+    text-decoration: none;
+    background: #305DFB;
+    color: #fff;
+}
+
+.container a {
+
+    text-decoration: none;
+    float: right;
+    margin-right: 50px;
+    margin-top: 26px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 4% auto 15% auto;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 40%;
+    padding-bottom: 30px;
+}
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: -10px;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+.animate {
+    animation: zoom 0.6s
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+#menu__toggle {
+    opacity: 0;
+}
+
+.menu__btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+}
+
+.menu__btn>span::before {
+    content: '';
+    top: -8px;
+}
+
+.menu__btn>span::after {
+    content: '';
+    top: 8px;
+}
+
+.menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 320px;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #fff;
+    -webkit-box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    z-index: 999;
+}
+
+.menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.menu__item:hover {
+    background-color: #CFD8DC;
+}
+
+#menu__toggle:checked~.menu__btn>span {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#menu__toggle:checked~.menu__btn>span::before {
+    top: 0;
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+}
+
+#menu__toggle:checked~.menu__btn>span::after {
+    top: 0;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+#menu__toggle:checked~.menu__box {
+    visibility: visible;
+    left: 0;
+}
+
+@media only screen and (min-width : 1360px) {
+    .hamburger-menu {
+        display: none;
+    }
+}
+
+@media only screen and (max-width : 1360px) {
+    .nav {
+        display: none;
+    }
+
+    .account {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px;
+    }
+
+    .account-about {
+        margin: 0;
+    }
+
+    .account-form {
+        margin-right: 0;
+        margin-left: 20px;
+    }
+
+    .new-sms {
+        margin: 0;
+        padding: 50px;
+    }
+
+    .sms-about {
+        width: 30%;
+    }
+
+    .sms-about-item h2 {
+        margin: 0;
+    }
+
+    .sms-about-item span {
+        width: 250px;
+        margin: 0;
+    }
+
+    .send-sms {
+        margin: 0;
+        padding: 50px;
+    }
+
+    .send-about {
+        width: 30%;
+    }
+
+    .send-about-item h2 {
+        margin: 0;
+    }
+
+    .send-about-item span {
+        width: 250px;
+        margin: 0;
+    }
+
+    .send-sms-create {
+        margin: 0;
+    }
+}
+
+@media (max-width : 992px) {
+    .hero {
+        padding: 30px;
+    }
+
+    .about {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 30px;
+    }
+
+    .about-title {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .account {
+        padding: 30px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .account-about {
+        margin-bottom: 60px;
+    }
+
+    .new-sms {
+
+        padding: 30px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    .sms-about-item {
+        margin-top: 60px;
+    }
+
+    .send-sms {
+
+        padding: 30px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    .send-about-item {
+        margin-top: 60px;
+    }
+}
+
+@media (max-width : 650px) {
+
+    .hero h1 {
+        font-size: 44px;
+        line-height: 48px;
+    }
+
+    .about {
+        margin: 0;
+    }
+
+    .account-form {
+        width: 100%;
+        height: 100%;
+    }
+
+    .account-form input {
+        margin-bottom: 20px;
+        width: 85%;
+    }
+
+    .account-btn {
+        padding: 10px;
+    }
+
+    .new-sms {
+        justify-content: flex-start;
+    }
+
+    .new-sms-text {
+        width: 100%;
+    }
+
+    .new-sms-btn input,
+    .new-sms-archive input {
+        padding: 10px;
+    }
+
+    .new-ellipse-green,
+    .new-ellipse-purple,
+    .new-ellipse-square {
+        display: none;
+    }
+
+    .new-sms-create {
+        margin: 0;
+    }
+
+    .new-sms-people {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .new-sms-item {
+        position: static;
+    }
+
+    .new-sms-people img {
+        width: 64px;
+        height: 64px;
+    }
+
+    .new-sms-text {
+        padding: 0;
+    }
+
+    .send-sms {
+        justify-content: flex-start;
+    }
+
+    .send-sms-text {
+        width: 100%;
+    }
+
+    .send-sms-btn input,
+    .send-sms-archive input {
+        padding: 10px;
+    }
+
+    .send-ellipse-green,
+    .send-ellipse-purple,
+    .send-ellipse-square {
+        display: none;
+    }
+
+    .send-sms-create {
+        margin: 0;
+    }
+
+    .send-sms-item {
+        position: static;
+    }
+
+    .send-sms-people img {
+        width: 64px;
+        height: 64px;
+    }
+
+    .send-sms-text {
+        padding: 0;
+    }
+
+    .telegram {
+        display: none;
+    }
+
+    .send-sms-create {
+        width: 100%;
+        padding-top: 30px;
+    }
+
+    .send-sms-about span {
+        width: 100%;
+    }
+}

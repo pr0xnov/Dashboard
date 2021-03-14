@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <title>Test-task</title>
+
+</head>
+
+<body>
+
+    <div class="header-container">
+        <header>
+            <nav class="nav">
+                <ul class="nav-item">
+                    <li><img src="img/logo.png" alt="logo"></li>
+
+                    <div class="dropdown">
+                        <a class="dropbtn" href="#!">Features <img src="img/arrow-down.png" alt="arrow"></a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">link 1</a></li>
+                            <li><a href="#">link 2</a></li>
+                            <li><a href="#">link 3</a></li>
+                        </ul>
+                    </div>
+                    <li><a href="#!">About</a></li>
+                    <li><a href="#!">Pricing</a></li>
+                    <li><a href="#!">Blog</a></li>
+                    <li><a href="#!">Contact Us</a></li>
+                </ul>
+                <div class="nav-btn">
+                    <a class="btn-log" href="#!"
+                        onclick="document.getElementById('modal-wrapper').style.display='block'">
+                        Login</a>
+
+                    <div id="modal-wrapper" class="modal">
+
+                        <form class="modal-content animate" action="/action_page.php">
+
+                            <div class="imgcontainer">
+                                <span onclick="document.getElementById('modal-wrapper').style.display='none'"
+                                    class="close" title="Close PopUp">&times;</span>
+                                <h2>Sign in to your account</h1>
+                            </div>
+
+                            <div class="container">
+                                <input type="text" placeholder="Enter Username" name="uname">
+                                <input type="password" placeholder="Enter Password" name="psw">
+                                <button type="submit">Login</button>
+                                <input type="checkbox"> Remember me
+                                <a href="#">Forgot Password ?</a>
+                            </div>
+
+                        </form>
+                    </div>
+
+                    <a class="btn-start" href="#email">Start Free Trial</a>
+                </div>
+            </nav>
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+                <ul class="menu__box">
+                    <li><a class="menu__item" href="#">Menu</a></li>
+                    <li><a class="menu__item" href="#">Menu 2</a></li>
+                    <li><a class="menu__item" href="#">Menu 3</a></li>
+                    <li><a class="menu__item" href="#">Menu 4</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Welcome to your <br> presonal SMS Dashboard</h1>
+                <h2>Tempor minim anim eiusmod occaecat eu. In labore veniam incididunt mollit commodo <br> nostrud non
+                    ex occaecat occaecat deserunt magna quis veniam. </h2>
+                <div class="hero-btn">
+                    <a class="btn-start" href="#email">Start Free Trial</a>
+                    <a class="btn-discover" href="#send-sms">Discover</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="about">
+        <h2 class="about-title title">Nisi ad voluptate laboris dolor deserunt adipisicing ea amet mollit commodo
+            voluptate aute adipisicing. Anim minim do exercitation id.</h2>
+        <ul class="about-list">
+            <li>Nisi ad voluptate laboris dolor deserunt adipisicing <br> ea amet mollit commodo voluptate aute
+                adipisicing. </li>
+            <li>Nisi ad voluptate laboris dolor deserunt adipisicing. </li>
+            <li>Nisi ad voluptate laboris dolor deserunt. </li>
+        </ul>
+    </section>
+
+    <section class="account">
+        <div class="account-about">
+            <img src="img/account-icon.png" alt="account-icon">
+            <h2 class="account-title title">Set up FREE Trial Account</h2>
+            <span>Duis pariatur ullamco Lorem magna duis Lorem. Nisi quis sit Lorem cupidatat eiusmod ad et anim
+                commodo dolor id voluptate cupidatat. Dolore ut excepteur enim tempor. </span>
+        </div>
+        <div class="account-form">
+            <div class="account-form-block" id="email">
+                <div class="account-form-input">
+                    <h3>Your Email</h3>
+                    <input class="email" name="email" type="email" placeholder="Write here your email address">
+                    <h3>Your Phone number</h3>
+                    <input class="telnum" name="telnum" type="tel" placeholder="Write here your email address">
+
+                    <a class="account-btn btn-start" href="#!">Start Free Trial</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sms">
+        <div class="new-sms">
+            <div class="new-sms-create">
+                <img class="new-ellipse-green" src="img/Ellipse 6.png" alt="ellipse" width="179px" height="179px">
+                <img class="new-ellipse-purple" src="img/Ellipse 7.png" alt="ellipse" width="53px" height="53px">
+                <img class="new-ellipse-square" src="img/Pattern.png" alt="ellipse" width="142px" height="142px">
+                <div class="new-sms-item">
+                    <div class="new-sms-people">
+                        <img src="img/woman.png" alt="woman">
+                        <div class="new-sms-text">
+                            <h3>Brandie Warren</h3>
+                            <span>Sunt mollit dolor sunt non cillum pari...</span>
+                        </div>
+                    </div>
+                    <div class="new-sms-people">
+                        <img src="img/man.png" alt="man">
+                        <div class="new-sms-text">
+                            <h3>Wade Wilson</h3>
+                            <span>Sunt mollit dolor sunt non cillum pari...</span>
+                        </div>
+                    </div>
+                    <a href="#!" class="new-sms-btn"><input type="button" value="Create New Message"></a>
+                    <a href="#!" class="new-sms-archive"><input type="button" value="Archive"></a>
+                </div>
+            </div>
+            <div class="sms-about">
+                <div class="sms-about-item">
+                    <img src="img/phone.png" alt="phone-icon" width="60px" height="60px">
+
+                    <h2 class="sms-title title">Outbound SMS</h2>
+                    <span>Create and store templates for messages you send on a regular basis. Duis pariatur ullamco
+                        Lorem magna duis Lorem. </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="send-sms" id="send-sms">
+        <div class="send-about">
+            <div class="send-about-item">
+                <img src="img/sms.png" alt="phone-icon" width="60px" height="60px">
+
+                <h2 class="send-title title">Send SMS</h2>
+                <span>Send the same message to multiple recipients in one scheduled event. If you want to send multiple
+                    messages to multiple recepients in one event, please use the bulk upload option in the main
+                    menu.</span>
+            </div>
+        </div>
+        <div class="send-sms-container">
+            <div class="send-sms-create">
+                <img class="send-ellipse-purple" src="img/Ellipse 7.png" alt="ellipse" width="139px" height="139px">
+                <img class="send-ellipse-green" src="img/Ellipse 6.png" alt="ellipse" width="231px" height="231px">
+                <img class="send-ellipse-square" src="img/Pattern.png" alt="ellipse" width="142px" height="142px">
+                <div class="send-sms-item">
+                    <div class="send-sms-people">
+                        <img src="img/send-man.png" alt="man">
+                        <div class="send-sms-text">
+                            <h3>Ronald Simmmons</h3>
+                            <a href="#!" class="send-sms-archive"><input type="button" value="Select"></a>
+                            <a class="telegram" href="#!"><img src="img/telegram.png" alt="telegram"></a>
+                        </div>
+                    </div>
+                    <div class="send-sms-about">
+                        <span>Culpa pariatur minim eiusmod mollit qui. Dolore reprehenderit duis sint aliqua do magna
+                            pariatur ad reprehenderit laborum veniam consequat.</span>
+                        <span>Culpa pariatur minim eiusmod mollit qui. Dolore reprehenderit duis sint aliqua do magna
+                            pariatur ad reprehenderit laborum veniam consequat.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("a").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 600, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+    <script>
+        var modal = document.getElementById('modal-wrapper');
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
